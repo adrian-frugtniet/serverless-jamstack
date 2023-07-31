@@ -1,0 +1,23 @@
+[
+  {
+    "apihost": "https://faas-syd1-c274eac6.doserverless.co",
+    "namespace": "fn-8b07bf34-a6cb-4f8d-9c05-becb837e1482",
+    "packageVersions": {
+      "cloud": {
+        "version": "0.0.1",
+        "digest": "ea21cda643f5ae4cc95a97d79c0d69bf69a376abcd6ff0d2cd8adf8c7cdab429"
+      }
+    },
+    "actionVersions": {
+      "cloud/getCoffee": {
+        "version": "0.0.1",
+        "digest": "41d6b53f7fe5412396961b4784e33f480643ae4ab771a2acce3a3ea2efbc4b8d"
+      },
+      "cloud/postEmail": {
+        "version": "0.0.1",
+        "digest": "13365a6b06c9a4ab22ce6dd37aaaf048d59d45fec4bf3d4605df48a74df08882"
+      }
+    },
+    "webHashes": {}
+  }
+]
