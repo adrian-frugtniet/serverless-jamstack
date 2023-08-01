@@ -1,6 +1,14 @@
 const MongoClient = require('mongodb').MongoClient;
 
 async function main(args) {
+	
+	console.log("postEmail.main - BEGIN");
+	
+	return {
+		headers: {"location": "www.google.com"},
+		statusCode: 301
+	}
+
     const uri = process.env['DATABASE_URL'];
     let client = new MongoClient(uri);
 
