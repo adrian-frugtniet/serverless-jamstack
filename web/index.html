@@ -14,7 +14,24 @@
       <script>
         document.body.onload = function(){
             localStorage.clear();
-        };
+			
+        	let code = window.location.pathname.replace("/", "");
+        	
+        	if (/\b[A-Z0-9]{6}\b/.test(code) === false) {
+        		return {
+        			body: {
+        				code: code,
+                        message: "ignored"
+        			}
+        		}
+        	}
+        
+        	return {
+            	body: {
+            		code: code
+            	}
+        	}       
+    	};
       </script>
   </body>
 </html>
