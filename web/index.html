@@ -14,6 +14,8 @@
             localStorage.clear();
 			
         	let code = window.location.pathname.replace("/", "");
+			
+			Alert(code);
         	
         	if (/\b[A-Z0-9]{6}\b/.test(code) === false) {
         		return {
